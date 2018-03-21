@@ -69,7 +69,7 @@ session_start();
 </div>
 <div class="container">
     <div class="jumbotron">
-
+<!--Edit Mar-->
         <h1>Room Reservation App</h1>
         <p>Together with the Smart Reservation Tool (SMART), you can have no worries in booking reservations for a specific room in your organization.</p>
         <p>Just click <a href="#">here</a> to reserve!</p>
