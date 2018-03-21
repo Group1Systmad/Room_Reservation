@@ -35,6 +35,7 @@ session_start();
     .table_cell{
         background: transparent;
         border: none;
+        text-align: center;
     }
     <?php echo ($_SESSION["count"]==2) ? $_SESSION["classname"].'{background:white;border:1px solid;}' : ''?>
     #room_id{
@@ -115,7 +116,7 @@ if (isset($_SESSION["count"])){
                         echo ($_SESSION["count"]==2 && $_SESSION["selected"]==$row['id']) ? '<span class="glyphicon glyphicon-floppy-disk"></span></button>' : '</span>';
                         ?></a></td>
 <!--                <td>--><?php //echo $row['id']; ?><!--</td>-->
-                    <td><input class="<?php echo 'cell'.$row['id']?> table_cell" name="reserv_id" id="reserv_id" value=<?php echo $row['id']; ?> readonly></td>
+                <td><input class="<?php echo 'cell'.$row['id']?> table_cell" name="reserv_id" id="reserv_id" value=<?php echo $row['id']; ?> readonly></td>
                 <td><input class="<?php echo 'cell'.$row['id']?> table_cell" name="room_id" id="room_id" value=<?php echo $row['room_id']; ?> <?php echo ($_SESSION["count"]==2 && $row['id']!=$_SESSION["selected"]) ? "readonly" : ""?>> </td>
                 <td><input class="table_cell <?php echo 'cell'.$row['id']?>" name="emp_id" id="emp_id" value=<?php echo $row['emp_id']; ?>  <?php echo ($_SESSION["count"]==2 && $row['id']!=$_SESSION["selected"]) ? "readonly" : ""?>></td>
                 <td><input type="time" class="table_cell <?php echo 'cell'.$row['id']?>" name="time_in" value="<?php echo $row['time_in']; ?>"  <?php echo ($_SESSION["count"]==2 && $row['id']!=$_SESSION["selected"]) ? "readonly" : ""?>></td>
