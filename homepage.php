@@ -130,6 +130,7 @@ session_start();
                 <div class="page-footers">
 
                     <?php
+			//Edit ko ulit
                     include 'connect.php';
                     $sql = "SELECT COUNT(id) AS total FROM tbl_sched WHERE Status=1";
                     $res = mysqli_query($con, $sql);
