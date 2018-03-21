@@ -85,6 +85,7 @@ session_start();
                 mysqli_close($con);
                 ?>
             </h1>
+<!--            Comment-->
             <p>rooms are reserved</p>
         </div>
         <div class="table_view col-md-9">
