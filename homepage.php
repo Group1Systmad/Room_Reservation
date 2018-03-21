@@ -135,7 +135,7 @@ session_start();
                     $res = mysqli_query($con, $sql);
                     $row= mysqli_fetch_array($res);
                     $total_pages = ceil($row["total"] / $results_per_page); // calculate total pages with results
-
+			//Edit ni Marj
                     for ($i=1; $i<=$total_pages; $i++) {
                         echo "<a class='pages";
                         echo ($i==$page) ? ' curPage\'' : '\'';
@@ -152,4 +152,5 @@ session_start();
     </div>
 
 </body>
+
 </html>
